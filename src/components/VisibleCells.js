@@ -31,6 +31,3 @@ export default function VisibleCells(currentPosition) {
 
   return neighbours;
 }
-
-const visibleCells = VisibleCells(1);
-console.log(visibleCells); 
