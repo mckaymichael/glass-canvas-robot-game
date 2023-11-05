@@ -2,6 +2,8 @@ import React from "react";
 
 export default function Grid() {
     return (
-        null
+        <div className="grid">
+            
+        </div>
     )
 }
