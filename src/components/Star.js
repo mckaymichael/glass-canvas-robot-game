@@ -1,5 +1,5 @@
-export default function Star({gridSize}) {
-//   const starPosition = Math.random() * gridSize;
-//   console.log(starPosition);
-  return <div>hello</div>;
+export default function Star() {
+  return (
+      <div className="star">⭐</div>
+  )
 }

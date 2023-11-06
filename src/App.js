@@ -28,13 +28,13 @@ function App() {
         setStar(true);
         setStartButton("Stop");
         generateRandomCellIndex();
-        console.log(randomCellIndex);
+        // console.log(randomCellIndex);
     }
   };
   
   return (
     <>
-      <Grid gridSize={gridSize}/>
+      <Grid gridSize={gridSize} randomCellIndex={randomCellIndex}/>
       <select value={gridSize} onChange={e => {setGridSize(e.target.value)}}>
         <option value="25">
           5x5
@@ -47,7 +47,7 @@ function App() {
         </option>
       </select>
       <button onClick={handleGameStateButton}>{startButton}</button>
-      {star && <Star/>}
+      {/* {star && <Star randomCellIndex={randomCellIndex}/>} */}
     </>
   );
 }
