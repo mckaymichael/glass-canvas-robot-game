@@ -1,8 +1,12 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 
-import Grid from "./components/Grid";
+import Grid, { valueValues } from "./components/Grid";
 import Star from "./components/Star";
+import AdjacentCellsToRobot from "./components/AdjacentCellsToRobot";
+
+console.log(AdjacentCellsToRobot(valueValues));
+
 
 function App() {
   const [gridSize, setGridSize] = useState(25);
@@ -47,7 +51,8 @@ function App() {
         </option>
       </select>
       <button onClick={handleGameStateButton}>{startButton}</button>
-      {/* {star && <Star randomCellIndex={randomCellIndex}/>} */}
+      <button>Rotate Right</button>
+      {star && <Star />}
     </>
   );
 }
